@@ -1,0 +1,157 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:antiquewhite;
+    color: #333;
+}
+.tv {
+    background-color: rgb(0, 0, 0);
+    border-radius: 15px;
+    margin: 10px;
+    padding: 10px;
+    width: 450px;
+    height: 435px;
+    border: 10px solid #000;
+    box-shadow: 0px 15px 10px rgba(0, 0, 0, 0.301);
+    text-align: center;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.img {
+    display: flex;
+    width: 500%; 
+    animation: movslider 10s infinite;
+}
+
+.img img {
+    width: 20%; 
+    flex: 0 0 20%;
+}
+
+@keyframes movslider {
+    0% { transform: translateX(0); }
+    20% { transform: translateX(0); }
+    25% { transform: translateX(-20%); }
+    45% { transform: translateX(-20%); }
+    50% { transform: translateX(-40%); }
+    70% { transform: translateX(-40%); }
+    75% { transform: translateX(-60%); }
+    95% { transform: translateX(-60%); }
+    100% { transform: translateX(0); }
+}
+
+
+.menu-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+.menu-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.menu-header h1 {
+    font-size: 36px;
+    margin: 0;
+    color: orange;
+}
+
+.menu-header p {
+    font-size: 18px;
+    color: #555;
+}
+
+
+.menu-items {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.menu-item {
+    background-color:rgb(255, 255, 255);
+    border-radius: 15px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.747);
+    margin: 15px;
+    padding: 15px;
+    text-align: center;
+    width: 300px;
+    transition: transform 0.2s;
+}
+
+.menu-item:hover {
+    transform: scale(1.06);
+}
+
+.menu-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.menu-item h3 {
+    font-size: 22px;
+    margin: 10px 0;
+    color: orange;
+}
+
+.menu-item p {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.menu-item button {
+    background-color: orange;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.menu-item button:hover {
+    background-color: rgb(255, 83, 83);
+}
+nav {
+    background-color:antiquewhite;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.212);
+    z-index: 1000;
+}
+
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+nav li a {
+    text-decoration: none;
+    color: orange;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 5px 10px;
+    transition: color 0.5s ease, border-bottom 0.3s ease;
+}
+
+nav li a:hover {
+    color:#ad0000 ;
+    border-bottom: 3px solid orange;transition: 0.4s ease;
+}
+span{color: black;}
